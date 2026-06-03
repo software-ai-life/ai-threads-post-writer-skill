@@ -42,7 +42,7 @@ ai-threads-post-writer/
 Copy this folder into your Codex skills directory:
 
 ```powershell
-Copy-Item -Path .\ai-threads-post-writer -Destination C:\Users\situn\.codex\skills\ai-threads-post-writer -Recurse -Force
+Copy-Item -Path .\ai-threads-post-writer -Destination \.codex\skills\ai-threads-post-writer -Recurse -Force
 ```
 
 Restart Codex after installing or updating the skill.
@@ -68,19 +68,19 @@ Use $ai-threads-post-writer 幫我整理這則 AI 產品更新，先看官方網
 Check readiness:
 
 ```powershell
-python C:\Users\situn\.codex\skills\ai-threads-post-writer\scripts\download_x_video.py --check
+python download_x_video.py --check
 ```
 
 Download a public X video:
 
 ```powershell
-python C:\Users\situn\.codex\skills\ai-threads-post-writer\scripts\download_x_video.py "https://x.com/.../status/..."
+python download_x_video.py "https://x.com/.../status/..."
 ```
 
 If X requires login context:
 
 ```powershell
-python C:\Users\situn\.codex\skills\ai-threads-post-writer\scripts\download_x_video.py "https://x.com/.../status/..." --cookies-from-browser chrome
+python download_x_video.py "https://x.com/.../status/..." --cookies-from-browser chrome
 ```
 
 Downloaded media is written to:
