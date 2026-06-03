@@ -1,0 +1,7 @@
+interface:
+  display_name: "AI Threads Post Writer"
+  short_description: "Turn AI X posts, videos, and links into copy-ready Threads drafts."
+  default_prompt: "Use $ai-threads-post-writer to turn this AI X post or video into a Traditional Chinese Threads draft."
+
+policy:
+  allow_implicit_invocation: true
